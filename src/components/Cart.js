@@ -25,7 +25,7 @@ function Cart({ onClickCloseCart, onRemove, items = [] }) {
         <div className="cartItems">
           {items.length > 0 ? (
             items.map((item) => (
-              <div className="cartItem">
+              <div key={item.id} className="cartItem">
                 <img
                   className="cartImg"
                   width={70}
@@ -38,7 +38,7 @@ function Cart({ onClickCloseCart, onRemove, items = [] }) {
                   <b>{item.price} руб.</b>
                 </div>
                 <img
-                  onClick={() => onRemove(item.id)}
+                  onClick={() => onRemove(item.id, item.mockId)}
                   className="removeBtn"
                   src="img/cart-remove.svg"
                   alt="Удалить из корзины"

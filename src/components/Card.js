@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Card({ id, title, price, imgUrl, onPlus, onFavorite, favorited }) {
-  const [addToCart, setAddToCart] = useState(false);
+function Card({ id, title, price, imgUrl, onPlus, onFavorite, favorited = false, isAdded = false }) {
+  const [addToCart, setAddToCart] = useState(isAdded);
   const [addToFavorite, setAddToFavorite] = useState(favorited);
   
   const onClickAddToCart = () => {

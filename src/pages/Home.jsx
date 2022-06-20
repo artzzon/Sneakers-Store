@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "../components/Card";
 
-function Home({ items, searchItem, onChangeSearchInput, setSearchItem, onAddToCart, onAddToFavorites }) {
+function Home({ items, cartItems, searchItem, onChangeSearchInput, setSearchItem, onAddToCart, onAddToFavorites }) {
   return (
     <div className="mainContent">
       <div className="headBlock">
@@ -37,6 +37,7 @@ function Home({ items, searchItem, onChangeSearchInput, setSearchItem, onAddToCa
               imgUrl={prod.imgUrl}
               onPlus={(obj) => onAddToCart(obj)}
               onFavorite={(obj) => onAddToFavorites(obj)}
+              isAdded={cartItems.some(obj => obj.id === prod.id)}
             />
           ))}
       </div>
