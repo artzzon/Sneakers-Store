@@ -72,7 +72,7 @@ function Cart({ onClickCloseCart, onRemove, items = [] }) {
             </div>
           )}
         </div>
-
+//
         {items.length > 0 && (
           <div className="cartTotal">
             <ul>

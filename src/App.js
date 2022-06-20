@@ -54,7 +54,7 @@ function App() {
         const currentItem = favorites.find(item => item.id === obj.id);
         const mockId = currentItem.mockId;
         axios.delete(`https://629f604f461f8173e4e81486.mockapi.io/favorites/${mockId}`);;
-        //setFavorites((prev) => prev.filter((item) => item.id !== obj.id));
+        // setFavorites((prev) => prev.filter((item) => item.id !== obj.id));
       } else {
         const { data } = await axios.post("https://629f604f461f8173e4e81486.mockapi.io/favorites", obj);
         setFavorites((prev) => [...prev, data]);

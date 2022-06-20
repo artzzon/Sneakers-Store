@@ -24,5 +24,5 @@ function Favorites({ favoritesList, onAddToCart, onAddToFavorites }) {
     </div>
   );
 };
-
+//
 export default Favorites;

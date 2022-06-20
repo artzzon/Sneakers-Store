@@ -1,7 +1,7 @@
 import React from "react";
 
 import Card from "../components/Card";
-
+//
 function Home({ items, cartItems, searchItem, onChangeSearchInput, setSearchItem, onAddToCart, onAddToFavorites }) {
   return (
     <div className="mainContent">
