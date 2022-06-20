@@ -12,7 +12,7 @@ function Card({ id, title, price, imgUrl, onPlus, onFavorite, favorited = false,
   const onClickAddToFavorite = () => {
     onFavorite({id, title, price, imgUrl})
     setAddToFavorite(!addToFavorite);
-  }
+  };
 
   return (
     <div className="catalog-item">

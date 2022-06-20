@@ -60,7 +60,7 @@ function App() {
         setFavorites((prev) => [...prev, data]);
       }
     } catch (error) {
-      alert('Ошибка при добавлении в Избранное');
+      alert('Ошибка при добавлении в Избранное!');
     }
   };
 

@@ -43,6 +43,6 @@ function Home({ items, cartItems, searchItem, onChangeSearchInput, setSearchItem
       </div>
     </div>
   );
-}
+};
 
 export default Home;

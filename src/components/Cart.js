@@ -96,6 +96,6 @@ function Cart({ onClickCloseCart, onRemove, items = [] }) {
       </div>
     </div>
   );
-}
+};
 
 export default Cart;

@@ -23,6 +23,6 @@ function Favorites({ favoritesList, onAddToCart, onAddToFavorites }) {
       </div>
     </div>
   );
-}
+};
 
 export default Favorites;
